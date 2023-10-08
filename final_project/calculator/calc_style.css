@@ -1,0 +1,131 @@
+/* a premade selection of colors for Calculator */
+:root {
+    --base-red: rgb(255, 175, 175);
+    --base-blue: rgb(181, 181, 255);
+    --base-teal: rgb(146, 251, 255);
+    --text-base: rgb(44, 44, 44);
+    --corpus-base: rgba(101, 142, 208, 0.75);
+    --border-base: rgba(170, 0, 255, 0.2);
+    --button-btn: rgba(181, 181, 255, 0.4);
+    --button-cmd: rgba(146, 251, 255, 0.4);
+    /* use if area:cancel is active */
+    --button-cancel: rgba(255, 175, 175, 0.9);
+    /*end*/
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+/* area:sudo */
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* area end */
+
+/* Initial design of the page */
+body {
+    align-items: center;
+    background: linear-gradient(320deg, var(--base-red), var(--base-blue), var(--base-teal));
+    display: flex;
+    font-family: sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+
+.row_screen {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: var(--corpus-base);
+    border: 2px solid var(--border-base);
+    border-radius: 16px;
+    box-shadow: 0 4px 60px var(--base-blue);
+    color: var(--text-base);
+    flex-basis: 240px;
+    height: 360px;
+    padding: 20px 35px;
+}
+
+.screen {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: var(--base-blue);
+    border: 1px solid var(--corpus-base);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--base-teal);
+    color: var(--text-base);
+    font-size: 35px;
+    overflow: auto;
+    padding: 4px;
+    text-align: right;
+    width: 180px;
+    overflow: hidden;
+    /* use if area:sudo is disabled */
+    /* width: 230px; */
+    /*end*/
+}
+
+/* a selection of configurations to design and align buttons together */
+.row_btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 6% 0;
+}
+
+.btn {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: var(--button-btn);
+    border: 1px solid var(--corpus-base);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--base-teal);
+    color: var(--text-base);
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 26px;
+    height: 42px;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+
+.cmd {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: var(--base-blue);
+    border: 1px solid var(--corpus-base);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--base-teal);
+    color: var(--text-base);
+    background: var(--button-cmd);
+}
+
+/* pseudo-classes for buttons */
+.btn:hover {
+    background-color: inherit;
+    color: inherit;
+}
+
+.btn:active {
+    background-color: var(--base-teal);
+}
+
+/* area:cancel */
+
+.cancel:active {
+    background-color: var(--button-cancel);
+}
+
+/* area end */
+
+/* a simple fix for double-buttons */
+.double {
+    flex-basis: 47%;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <script src="./assets/script/mp_script.js" defer></script>
+    <title>SL - main</title>
+</head>
+
+<body>
+    <hr>
+    <h1>s.l. - project website</h1>
+    <hr>
+    <header>
+        <a href="./main_page.html">main page</a>
+        <!-- the two liks are supposed to be hidden when in main page -->
+        <a href="./list_page.html">list of contents</a>
+        <a href="./con_calculator.html">calculator</a>
+    </header>
+    <hr>
+    <main>
+        <section id="section1">
+            <h2>welcome !</h2>
+            <p>Hello, my name is Sergei Leshchinskii and welcome to my first web project. I have created this website’s 
+                with a task to fit the requirements of the final project from Yoobee’s Web Development Micro-Credential 
+                classes. The newspaper style and few small features has been chosen to be implemented on my web page 
+                with an idea of experimenting with different programming tools and for entertainment as well. Please, 
+                feel free to explore and enjoy your time !
+            </p>
+            <br>
+            <div class="table" id="mainTable1">
+                <p>Before we start, please enter Your name below:</p>
+
+                <label for="first-name">First Name :</label>
+                <input type="text" id="first-name">
+
+                <label for="last-name">Last Name :</label>
+                <input type="text" id="last-name">
+                <br>
+                <button id="submit1">Submit</button>
+            </div>
+        </section>
+
+        <section id="section2" style="opacity: 0;">
+            <hr>
+            <h2 id="welcomeID1"></h2>
+            <p>Just a little bit of patience, there are two more steps that needs to be done before we begin the fun.
+                For the next step, we are going to need your email address as well as your physical address.</p>
+            <br>
+            <div class="table" id="mainTable2">
+                <p>Enter your address below:</p>
+
+                <label for="street">Street :</label>
+                <input type="text" id="street">
+
+                <label for="suburb">Suburb :</label>
+                <input type="text" id="suburb">
+
+                <label for="city">City :</label>
+                <input type="text" id="city">
+
+                <label for="zip">Zip / Postal Code :</label>
+                <input type="text" id="zip">
+
+                <label for="email">Email :</label>
+                <input type="text" id="email">
+                <br>
+                <button id="submit2">Submit</button> <button class="skip" id="skip1">Skip</button>
+            </div>
+        </section>
+        <section id="section3" style="opacity: 0;">
+            <hr>
+            <h2 id="welcomeID2"></h2>
+            <p>For our last step, Your credit card information needs to be provided next. This will help to
+                improve your experience of this website.</p>
+            <br>
+            <div class="table">
+                <p>Enter Your credentials below:</p>
+
+                <label for="name-on-card">Name on Card :</label>
+                <input type="text" id="name-on-card">
+
+                <label for="number-on-card">Number on Card :</label>
+                <input type="text" id="number-on-card">
+
+                <label for="expiration-date">Expiration Date :</label>
+                <input type="text" id="expiration-date">
+
+                <label for="cvc">CVC code :</label>
+                <input type="text" id="cvc">
+                <br>
+                <a href="list_page.html"><button id="submit3">Submit</button></a> 
+                <a href="list_page.html"><button class="skip" id="skip2">Skip</button></a>
+            </div>
+        </section>
+
+    </main>
+    <hr>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

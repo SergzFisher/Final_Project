@@ -1,0 +1,89 @@
+.table {
+    max-width: 600px;
+    text-align: center;
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: linear-gradient(120deg, var(--base-green), var(--base-teal), var(--base-blue));
+    border: 4px solid var(--border-green);
+    border-bottom-right-radius: 1.5em;
+    border-top-left-radius: 1.5em;
+    box-shadow: 0 4px 60px var(--bg-blue);
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    p {
+        margin-top: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    label {
+        font-family: Georgia, "Times New Roman", Times, serif;
+    }
+    input {
+        border-color: var(--base-teal);
+        background-color: var(--bg-teal);
+        display: flex;
+        width: 100%;
+        box-shadow: 0 4px 60px var(--bg-green);
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 400px;
+        transition-duration: 0.2s;
+        &:hover {
+            background-color: var(--base-green);
+        }
+    }
+    button {
+        border: 4px solid;
+        border-color: var(--base-teal);
+        background-color: var(--bg-teal);
+        width: 200px;
+        height: 40px;
+        transition-duration: 0.2s;
+        margin-bottom: 10px;
+        &:hover {
+            background-color: var(--base-green);
+        }
+        &:active {
+            background-color: var(--base-blue);
+        }
+    }
+    button.skip {
+        border-color: var(--base-red);
+        background-color: var(--border-red);
+        &:hover {
+            background-color: var(--skip-red);
+        }
+        &:active {
+            background-color: var(--base-blue);
+        }
+    }
+    opacity: 1;
+    display: block;
+    transition: opacity 1s ease-in-out;
+}
+
+.contents {
+
+    display: grid;
+    grid-template-columns: repeat(2, 800px);
+    grid-template-rows: repeat(3);
+    div {
+        max-width: 600px;
+        text-align: start;
+        backdrop-filter: blur(5.5px);
+        -webkit-backdrop-filter: blur(5.5px);
+        background: linear-gradient(120deg, var(--base-green), var(--base-teal), var(--base-blue));
+        border: 4px solid var(--border-green);
+        border-bottom-right-radius: 1.5em;
+        border-top-left-radius: 1.5em;
+        box-shadow: 0 4px 60px var(--bg-blue);
+    };
+    p {
+        margin-top: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}

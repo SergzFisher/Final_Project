@@ -1,0 +1,77 @@
+// basics.scss is related to all generic web pages
+
+// a premade selection of colors for web pages
+:root {
+    --bg-blue: rgb(100, 135, 210);
+    --bg-teal: rgb(120, 230, 230);
+    --bg-green: rgb(120, 255, 185);
+    --base-blue: rgb(60, 125, 200);
+    --base-teal: rgb(60, 165, 165);
+    --base-green: rgb(60, 190, 135);
+    --base-red: rgb(170, 105, 140);
+    --border-teal: rgb(80, 220, 220);
+    --border-green: rgb(80, 245, 175);
+    --border-red: rgb(226, 147, 199);
+    --skip-red: rgb(245, 109, 177);
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    background: linear-gradient(320deg, var(--bg-blue), var(--bg-teal), var(--bg-green));
+    background-attachment: fixed;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    font-family: Arial;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: linear-gradient(120deg, var(--base-green), var(--base-teal), var(--base-blue));
+    border: 4px solid var(--border-green);
+    border-bottom-right-radius: 1.5em;
+    border-top-left-radius: 1.5em;
+    height: inherit;
+    box-shadow: 0 4px 60px var(--bg-blue);
+    display: flex;
+    justify-content: space-between;
+    a {
+        text-transform: uppercase;
+        flex-direction: row;
+        font-family: serif;
+        font-weight: bold;
+        align-content: center;
+        padding: 4px;
+    }
+}
+
+hr {
+    height: 6px;
+    margin-top: 8px;
+}
+
+h1,
+h2 {
+    font-size: 2em;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+section {
+    opacity: 1;
+    display: block;
+    transition: opacity 1s ease-in-out;
+}
