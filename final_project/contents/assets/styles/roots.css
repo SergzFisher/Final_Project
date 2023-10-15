@@ -1,0 +1,14 @@
+:root {
+  --bg-blue: rgb(100, 135, 210);
+  --bg-teal: rgb(120, 230, 230);
+  --bg-green: rgb(120, 255, 185);
+  --base-blue: rgb(60, 125, 200);
+  --base-teal: rgb(60, 165, 165);
+  --base-green: rgb(60, 190, 135);
+  --base-red: rgb(170, 105, 140);
+  --base-red2: rgb(201, 99, 158);
+  --border-teal: rgb(80, 220, 220);
+  --border-green: rgb(80, 245, 175);
+  --border-red: rgb(226, 147, 199);
+  --skip-red: rgb(245, 109, 177);
+}/*# sourceMappingURL=roots.css.map */
